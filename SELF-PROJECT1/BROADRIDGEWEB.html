@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Broadridge</title>
+    <link rel="stylesheet" href="cssStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;1,200;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <section class="header">
+    <nav>
+        <a href="index2.html"><img src="images/download.png" alt="logo"></a>
+        <div class="nav-links" id="navLinks"> 
+            <i class="fa fa-times"  onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">SERVICES</a></li>
+                <li><a href="">BLOG</a></li>
+                <li><a href="">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars"  onclick="showMenu()"></i>
+    </nav>
+    <div class="text-box">
+        <h1>World's Biggest Company</h1>
+        <p>
+            At Broadridge, we work to instill a community culture by encouraging our associates to form affinity groups to promote inclusiveness and celebrate diversity. A good example is our Women’s Leadership Forum, which promotes skill-building, development, and networking within Finance—an industry which can often be a men’s only club. This highlight on diversity leads to associates who feel accepted and ready to work hard!
+
+
+        </p>
+        <a class="hero-btn" href="">Visit Official website to know more.</a>
+    </div>
+</section>
+<!-- services-->
+<section class="services">
+ <h1 style="font-size: 36px;font-weight: 600;">Services We Provide</h1>
+ <p style="color: #777; font-size: 14px;font-weight: 300;line-height: 22px;padding: 10px;">We provide advanced technology and operations, communications, data and analytics solutions for the financial services industry and businesses.</p>
+<div class="row">
+    <div class="course-col">
+        <h3>Technology & Operations</h3>
+        <p style="color: #777; font-size: 14px;font-weight: 300;line-height: 22px;padding: 10px;">Become more responsive to the needs of your customers and business by automating the entire trade life cycle, from execution to accounting, with our extensive range of multi-asset processing solutions.</p>
+    </div>
+    <div class="course-col">
+        <h3>Communications</h3>
+        <p style="color: #777; font-size: 14px;font-weight: 300;line-height: 22px;padding: 10px;">Reimagine how you connect with customers and investors while meeting regulatory requirements with our suite of multi-channel communications solutions.</p>
+    </div>
+    <div class="course-col">
+        <h3>Data & Analytics</h3>
+        <p style="color: #777; font-size: 14px;font-weight: 300;line-height: 22px;padding: 10px;">Identify new growth opportunities through predictive analysis and insights with our leading-edge data aggregation and management platform.</p>
+    </div>
+</div>
+</section>
+
+
+
+<!--JAVA SCRIPT FOR TOGGLE MENU-->
+<script>
+    var navLinks=document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right="0";
+    } 
+    var navLinks=document.getElementById("navLinks");
+    function hideMenu(){
+        navLinks.style.right="-200px";
+    }
+
+</script>
+</body>
+</html>
